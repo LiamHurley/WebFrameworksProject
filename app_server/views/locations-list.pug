@@ -1,0 +1,62 @@
+extends layout 
+block content
+  .row.banner
+    .col-12
+      h1 Destination Finder
+        small &nbsp;Find your next holiday destination!
+  .row
+    .col-12.col-md-8
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Bled, Slovenia
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+            //span.badge.badge-pill.badge-default.float-right 100m
+          //p.address 125 High Street, Reading, RG6 1PS
+          img.img-fluid.mb-2.px-1(src='/images/lakebled.jpg' alt='Lake Bled')
+          .facilities
+            span.badge.bg-warning.text-dark Alpine Views
+            span.badge.bg-warning.text-dark Hiking
+            span.badge.bg-warning.text-dark Easy-Going
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Cafe Hero
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-o
+              i.fa.fa-star-o
+              i.fa.fa-star-o
+            span.badge.badge-pill.badge-default.float-right 200m
+          p.address 125 High Street, Reading, RG6 1PS
+          .facilities
+            span.badge.badge-warning Hot drinks
+            span.badge.badge-warning Food
+            span.badge.badge-warning Premium wifi
+
+      .card
+        .card-block
+          h4
+            a(href="/location") Burger Queen
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+            span.badge.badge-pill.badge-default.float-right 500m
+          p.address 125 High Street, Reading, RG6 1PS
+          .facilities
+            span.badge.badge-warning Food
+            span.badge.badge-warning Premium wifi
+
+    .col-12.col-md-4
+      p.lead Fill this section with news items...
