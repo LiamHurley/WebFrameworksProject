@@ -1,5 +1,59 @@
-extends layout
-
+extends layout 
 block content
-  h1= title
-  p Welcome to #{title}
+  .row.banner
+    .col-12
+      h1 Destination Finder
+        small &nbsp;Find your next holiday destination!
+  .row
+    .col-12.col-md-8
+
+      .card.p-3
+        .card-block
+          h4
+            a.me-1(href="#") Bled, Slovenia
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+          img.img-fluid.mb-2(src='/images/lakebled.jpg' alt='Lake Bled')
+          .facilities
+            span.badge.bg-warning.text-dark Alpine Views
+            span.badge.bg-warning.text-dark Hiking
+            span.badge.bg-warning.text-dark Easy-Going
+
+      .card.p-3
+        .card-block
+          h4
+            a.me-1(href="#") Barcelona, Spain
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star 
+              i.fa.fa-star
+              i.fa.fa-star
+          img.img-fluid.mb-2(src='/images/barcelona.jpg' alt='Barcelona')
+          .facilities
+            span.badge.bg-warning.text-dark Great Food
+            span.badge.bg-warning.text-dark Architecture
+            span.badge.bg-warning.text-dark Churches
+
+      .card.p-3
+        .card-block
+          h4
+            a.me-1(href="#") Paris, France
+            small &nbsp;
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star
+              i.fa.fa-star-half-o
+          img.img-fluid.mb-2(src='/images/paris.jpg' alt='Paris')
+          .facilities
+            span.badge.bg-warning.text-dark Great For Couples
+            span.badge.bg-warning.text-dark City Life
+            span.badge.bg-warning.text-dark History
+
+    .col-12.col-md-4.d-none.d-sm-block
+      p.lead Fill this section with news items...

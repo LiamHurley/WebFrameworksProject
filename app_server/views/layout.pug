@@ -9,19 +9,19 @@ html
   body
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.py-4
       .container-fluid
-        a.navbar-brand(href='#') Destination Finder
+        a.navbar-brand(href='/') Destination Finder
         button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
           span.navbar-toggler-icon
         #navbarNav.collapse.navbar-collapse
           ul.navbar-nav
             li.nav-item
-              a.nav-link.active(aria-current='page' href='#') About
+              a.nav-link.active(aria-current='page' href='/about') About
           ul.navbar-nav
             li.nav-item
-              a.nav-link.active(aria-current='page' href='#') Login
+              a.nav-link.active(aria-current='page' href='/login') Login
           ul.navbar-nav
             li.nav-item
-              a.nav-link.active(aria-current='page' href='#') Register        
+              a.nav-link.active(aria-current='page' href='/register') Register        
     .container
       block content
       footer
