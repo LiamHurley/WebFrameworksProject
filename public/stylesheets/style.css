@@ -2,8 +2,8 @@
 
 body {
   font-family: "Cabin", Arial, sans-serif;
-  color: #ffffff;
-  background-color: #108a93;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
   margin-top: 4em;
-  border-bottom: 1px solid #469ea8;
+  border-bottom: 1px solid #6082B6;
   margin-bottom: 1.5em;
   padding-bottom: 0.5em;
 }
@@ -31,7 +31,8 @@ h1 small {
 }
 
 .card {
-  background-color: #469ea8;
+  background-color: #6082B6;
+  margin-bottom: 1rem;
 }
 
 .card-primary {
@@ -39,25 +40,12 @@ h1 small {
   margin-bottom: 1rem;
 }
 
-.review-header {
-  background-color: #31727a;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.review {
-  margin-right: -20px;
-  margin-left: -20px;
-  margin-bottom: 1em;
-}
-
 .badge-default, .btn-primary {
   background-color: #ad1d28;
   border-color: #911821;
 }
 
-h4 a, h4 a:hover {
+h4, h4 a, h4 a:hover, .news-link {
   color: #fff;
 }
 

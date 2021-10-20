@@ -1,35 +1,28 @@
 extends layout
 block content
-  section.vh-100.bg-image(style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.jpg');")
-    .mask.d-flex.align-items-center.h-100.gradient-custom-3
-      .container.h-100
-        .row.d-flex.justify-content-center.align-items-center.h-100
-          .col-12.col-md-9.col-lg-7.col-xl-6
-            .card(style='border-radius: 15px;')
-              .card-body.p-5
-                h2.text-uppercase.text-center.mb-5= formLabels.formTitle
-                form(action='' method='')
-                  .form-outline.mb-4
-                    input#form3Example1cg.form-control.form-control-lg(type='text')
-                    label.form-label(for='form3Example1cg')= formLabels.nameLabel
-                  .form-outline.mb-4
-                    input#form3Example3cg.form-control.form-control-lg(type='email')
-                    label.form-label(for='form3Example3cg')= formLabels.emailLabel
-                  .form-outline.mb-4
-                    input#form3Example4cg.form-control.form-control-lg(type='password')
-                    label.form-label(for='form3Example4cg')= formLabels.passwordLabel
-                  .form-outline.mb-4
-                    input#form3Example4cdg.form-control.form-control-lg(type='password')
-                    label.form-label(for='form3Example4cdg')= formLabels.repeatPasswordLabel
-                  .form-check.d-flex.justify-content-center.mb-5
-                    input#form2Example3cg.form-check-input.me-2(type='checkbox' value='')
-                    label.form-check-label(for='form2Example3g')
-                      | I agree to all statements in the 
-                      a.text-body(href='#!')
-                        u Terms of service
-                  .d-flex.justify-content-center
-                    button.btn.btn-success.btn-block.btn-lg.gradient-custom-4.text-body(type='button') Register
-                  p.text-center.text-muted.mt-5.mb-0
-                    | Already have an account? 
-                    a.fw-bold.text-body(href='#!')
-                      u Login here
+  .container-fluid.vh-100
+    .rounded.d-flex.justify-content-center
+      .col-12.col-md-6.shadow-lg.p-5.bg-light
+        .text-center.pt-3
+          h3.text-primary Create Account
+        .p-4
+          form(action='')
+            .input-group.mb-3
+              span.input-group-text.bg-primary
+                i.bi.bi-person-plus-fill.text-white
+              input.form-control(type='text' placeholder='Username')
+            .input-group.mb-3
+              span.input-group-text.bg-primary
+                i.bi.bi-envelope.text-white
+              input.form-control(type='email' placeholder='Email')
+            .input-group.mb-3
+              span.input-group-text.bg-primary
+                i.bi.bi-key-fill.text-white
+              input.form-control(type='password' placeholder='Password')
+            .d-grid.col-12.mx-auto
+              button.btn.btn-primary(type='button')
+                span
+                |  Sign up
+            p.text-center.mt-3
+              | Already have an account? 
+              a(href='/login') Sign in

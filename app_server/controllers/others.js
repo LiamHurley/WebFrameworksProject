@@ -6,27 +6,13 @@ const about = function(req, res){
 
 const register = function(req,res){
     res.render('register', {
-        title: 'Register',
-        
-        formLabels: {
-            formTitle: 'Create An Account',
-            nameLabel: 'Your Name',
-            emailLabel: 'Your Email',
-            passwordLabel: 'Password',
-            repeatPasswordLabel: 'Repeat your password',
-        }
+        title: 'Register'
     });
 }
 
 const login = function(req,res){
     res.render('login', {
-        title: 'Login',
-  
-        formLabels: {
-          formTitle: 'Login',
-          emailLabel: 'Your Email',
-          passwordLabel: 'Password'
-        }
+        title: 'Login'
     });
 }
   

@@ -1,5 +1,4 @@
 extends layout 
-include _includes/sharedHTMLfunctions
 block content
   .row.banner
     .col-12
@@ -12,12 +11,16 @@ block content
           .card-block
             h4
               a.me-1(href="#")= location.name
-              +outputRating(location.rating)
-            img.img-fluid.mb-2(src= location.image alt= location.alt)
+            img.img-fluid.my-3(src= location.image alt= location.alt)
             p= location.bio
             .features
               each feature in location.features
                 span.badge.bg-warning.text-dark= feature
   
     .col-12.col-md-4.d-none.d-sm-block
-      p.lead Fill this section with news items...
+      each news in newsItems
+        .card.p-3
+          .card-block
+            h4= news.headline
+            p= news.blurb
+              a.news-link(href= news.link) Read more
