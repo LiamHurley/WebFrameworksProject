@@ -1,6 +1,6 @@
 const about = function(req, res){
     res.render('about', { 
-        title: 'About' 
+        title: 'About'
     });
 };
 
@@ -20,6 +20,4 @@ module.exports = {
     about,
     register,
     login
-};
-  
-    
+};   
