@@ -10,4 +10,5 @@ router.get('/', ctrlLocations.homelist);
 router.get('/about', ctrlOthers.about);
 router.get('/register', ctrlOthers.register);
 router.get('/login', ctrlOthers.login);
+
 module.exports = router;
