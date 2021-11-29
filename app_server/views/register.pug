@@ -1,28 +1,8 @@
 extends layout
 block content
   .container-fluid.vh-100
-    .rounded.d-flex.justify-content-center
-      .col-12.col-md-6.shadow-lg.p-5.bg-light
-        .text-center.pt-3
-          h3.text-primary Create Account
-        .p-4
-          form(action='')
-            .input-group.mb-3
-              span.input-group-text.bg-primary
-                i.bi.bi-person-plus-fill.text-white
-              input.form-control(type='text' placeholder='Username')
-            .input-group.mb-3
-              span.input-group-text.bg-primary
-                i.bi.bi-envelope.text-white
-              input.form-control(type='email' placeholder='Email')
-            .input-group.mb-3
-              span.input-group-text.bg-primary
-                i.bi.bi-key-fill.text-white
-              input.form-control(type='password' placeholder='Password')
-            .d-grid.col-12.mx-auto
-              button.btn.btn-primary(type='button')
-                span
-                |  Sign up
-            p.text-center.mt-3
-              | Already have an account? 
-              a(href='/login') Sign in
+    app-registration Loading
+block scripts
+  script(src='/build/runtime.66a9fb164a05cd985912.js')
+  script(src='/build/polyfills.f0316ed8b4b6bc051436.js')
+  script(src='/build/main.a3e9d44a38e6c2b8553e.js')
