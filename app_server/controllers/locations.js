@@ -13,8 +13,8 @@ const _renderHomepage = function(req, res, responseBody){
             title: 'Destination Finder', 
             strapline: 'Find your next holiday destination!' 
         }, 
-        locations: responseBody.locations
-        /*newsItems: [{
+        locations: responseBody.locations,
+        newsItems: [{
             headline: 'USA Travel Restrictions Set To Ease',
             blurb: 'US President Joe Biden has announced a further easing of restrictions on Europeans wishing to visit the US. The news has been met '
             + ' with open arms by airline companies, who experienced a surge in European travellers booking flights to the US last night... ',
@@ -24,7 +24,7 @@ const _renderHomepage = function(req, res, responseBody){
             blurb: 'The Balkans are home to some of Europe\'s most spectacular views, centuries of complex history and wholesome, wallet-friendly cuisine.'
             + ' From the Mediterranean-like atmosphere along the Adriatic Sea in Slovenia and Croatia to the fabled histories of Sarajevo and Belgrade... ',
             link: 'https://www.rte.ie/news/'
-        }]*/
+        }]
     });
 };
 
