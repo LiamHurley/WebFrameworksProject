@@ -11,7 +11,6 @@ router
 
 router
   .route('/register')
-  .get(ctrlOthers.register)
   .post(ctrlOthers.userCreate);
 
 router

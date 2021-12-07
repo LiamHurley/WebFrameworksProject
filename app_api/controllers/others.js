@@ -13,14 +13,7 @@ const userLogin = function (req, res) {
     .json({"status" : "success"});
 };
 
-const register = function(req,res){
-    res
-    .status(200)
-    .json({"status" : "success"});
-}
-
 module.exports = {
     userCreate,
-    userLogin,
-    register
+    userLogin
 };
